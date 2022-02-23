@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Asul');
+ 
+#credit{
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ color: white;
+ font-family: Asul;
+ font-size: 2vh;
+ z-index: 10;
+ background: rgba(0,0,0,0.5);
+}
+#credit a{
+ font-size: 2vh;
+}
+ 
+ body{
+ background-color: #6FA155;
+ }
+ 
+ #background{
+ position: fixed;
+ z-index: 0;
+ width: 100vw;
+ height: 100vh;
+ left: 0;
+ bottom: 0;
+ background-image: url('http://i.imgur.com/davuRwj.jpg');
+ background-size: cover;
+ pointer-events: none;
+ }
+ 
+ #image{
+ position: fixed;
+ right: 25vw;
+ bottom: 0vh;
+ z-index: 3;
+ height: 100vh;
+ pointer-events: none;
+ }
+ 
+ #image img{
+ height: 100%;
+ }
+ 
+ #text{
+ font-family: 'Asul';
+ font-size: 1.9vw;
+ color: #fff;
+ position: fixed;
+ left: 4vw;
+ top: 13vh;
+ width: 32vw;
+ height: 80vh;
+ z-index: 4;
+ text-align: center;
+ text-shadow:
+ -1px -1px 0 #000,
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
+ }
+ 
+ hr{
+ border: #ED8924 solid 0.2vw;
+ background-color: #ED8924;
+ }
+ 
+a{
+ font-family: 'Asul';
+ color: #ED8924 ;
+ text-shadow:
+ -1px -1px 0 #000,
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
+ font-size: 1.5vw;
+}
+ 
+ table{
+ width: 100%;
+ font-family: 'Asul';
+ color: white;
+ text-shadow:
+ -1px -1px 0 #000,
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
+ font-size: 1.5vw;
+ border-collapse: collapse;
+}
+ 
+tr:nth-child(even){
+ background: rgba(0,0,0,0.5);
+}
+ 
+ .clouds {
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+overflow: visible;
+pointer-events: none;
+opacity: 1;
+background:url('http://i.imgur.com/JkDqext.png');
+background-size: contain;
+z-index:1;
+ 
+-webkit-animation:move-scrolling-front 500s linear infinite;
+animation:move-scrolling-front 500s linear infinite;
+}
+ 
+@keyframes move-scrolling-front{
+from{background-position:0% 0%}
+to{background-position:900% 0%}
+}
+@-webkit-keyframes move-scrolling-front{
+from{background-position:0% 0%}
+to{background-position:900% 0%}
+}
+ 
+#player{
+position: fixed;
+z-index: 5;
+top: 13vh;
+left: 0px;
+width: 40px;
+height: 40px;
+overflow:hidden;
+}
+ 
+#slice{
+position: fixed;
+z-index:4;
+top: 13vh;
+left: 0px;
+width: 40px;
+height: 40px;
+}
+ 
+#slice img{
+ width: 100%;
+}
+</style>
+
+<body>
+ 
+<div id="text">
+ AN UNCONVENTIONAL BARD WHO'S GOOD WITH HIS FINGERS<hr>
+<table>
+<tr>
+<td>Name</td><td>Edward Han Valen</td>
+</tr>
+<tr>
+<td>Profession</td><td>Bard</td>
+</tr>
+<tr>
+<td>Instrument</td><td>Electric Guitar</td>
+</tr>
+<tr>
+<td>Style</td><td>Heavy Metal</td>
+</tr>
+<tr>
+<td>Orientation</td><td>Riffsexual</td>
+</tr>
+<tr>
+<td>Deity</td><td><a href="https://www.youtube.com/watch?v=OjtS1FbYeIg">Matt Pike</a></td>
+</tr>
+</table>
+<hr>
+<table>
+<tr>
+<td>Code is mine, art is not. I rendered it</td>
+</tr>
+<tr>
+<td>I record <a href="https://soundcloud.com/orcbard">original songs</a> about people he encounters</td>
+</tr>
+<tr>
+<td>Click the track names for each plot synopsis</td>
+</tr>
+</table>
+</div>
+ 
+<div class="clouds"></div>
+ 
+<div id="clouds"></div>
+ 
+<div id="background">
+</div>
+ 
+<div id="image">
+<img src="http://i.imgur.com/0YbMGk1.png">
+</div>
+ 
+ 
+<div id="slice">
+<img src="http://i.imgur.com/1QygnFg.png">
+</div>
+ 
+<div id=player><div style="opacity: 0;"><audio controls><source src="http://orig00.deviantart.net/d186/f/2017/183/a/a/eddie_theme_dii_by_rashayritto-dbeua9j.mp3" type="audio/mpeg"></audio></div></div>
+ 
+<div id="credit">
+Character profile by SQ</a>
+</div>
+
+</body>
+</html>
